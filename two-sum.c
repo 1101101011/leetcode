@@ -4,7 +4,10 @@
 
 int outer(int *nums, int numsSize, int target, int *returnSize) {
   if(numsSize < 4) {
-    return 2;
+    if(nums[0] + nums[1] == target) {
+      printf("[%d, %d]\n", 0, 1);
+      *returnSize 2;
+    }
   }
 }
 
